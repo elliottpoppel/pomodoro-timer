@@ -170,6 +170,8 @@ workButton.addEventListener('click', (event) => {
         createParticles(event, '👨‍💻');
         startWorkTimer();
     } else if (isWorkTime) {
+        createParticles(event, '⏸️');
+        createParticles(event, '🕑');
         pauseTimer();
     }
 });
@@ -179,6 +181,8 @@ restButton.addEventListener('click', (event) => {
         createParticles(event, '😴');
         startRestTimer();
     } else if (!isWorkTime) {
+        createParticles(event, '⏸️');
+        createParticles(event, '🕑');
         pauseTimer();
     }
 });
